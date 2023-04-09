@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'loading-background': "url('public/loading-background.png')"
+        'loading-background': "url('src/shared/assets/loading-background.png')"
       }
     }
   },

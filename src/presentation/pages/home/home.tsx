@@ -1,3 +1,9 @@
+import { LoadingBackground } from './components'
+
 export const Home = (): JSX.Element => {
-  return <h1>Home</h1>
+  return (
+    <LoadingBackground>
+      <h1>Carregando...</h1>
+    </LoadingBackground>
+  )
 }

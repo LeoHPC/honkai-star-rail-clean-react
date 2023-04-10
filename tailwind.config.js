@@ -5,6 +5,10 @@ export default {
     extend: {
       backgroundImage: {
         'loading-background': "url('../img/loading-background.png')"
+      },
+      fontFamily: {
+        monda: ['Monda', 'sans-serif'],
+        audio: ['Audiowide', 'cursive']
       }
     }
   },

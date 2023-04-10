@@ -8,6 +8,7 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "test": "jest --no-cache",
+    "test:watch": "jest --no-cache --watch",
     "coverage": "jest --coverage --no-cache",
     "lint": "eslint .",
     "lint:fix": "eslint --fix",

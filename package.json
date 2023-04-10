@@ -9,13 +9,15 @@
     "preview": "vite preview",
     "test": "jest --no-cache",
     "test:watch": "jest --no-cache --watch",
-    "coverage": "jest --coverage --no-cache",
+    "test:coverage": "jest --coverage --no-cache",
+    "test:badges": "npm run test:coverage  && jest-coverage-badges",
     "lint": "eslint .",
     "lint:fix": "eslint --fix",
     "format": "prettier --write './**/*.{js,jsx,ts,tsx,md,json}' --config ./.prettierrc"
   },
   "dependencies": {
     "@babel/preset-env": "^7.21.4",
+    "jest-coverage-badges": "^1.1.2",
     "jest-environment-jsdom": "^29.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

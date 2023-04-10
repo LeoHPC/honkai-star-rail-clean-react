@@ -1,6 +1,6 @@
 import { render } from '@testing-library/react'
 
-import { Home } from '@/presentation/pages/home/home'
+import { Home } from '@/presentation/pages'
 
 describe('Home Page', () => {
   it('should render loading component on page mount', () => {

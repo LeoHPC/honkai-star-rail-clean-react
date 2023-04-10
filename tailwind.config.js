@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'loading-background': "url('../img/loading-background.jpeg')"
+        'loading-background': "url('../img/loading-background.webp')"
       },
       fontFamily: {
         monda: ['Monda', 'sans-serif'],

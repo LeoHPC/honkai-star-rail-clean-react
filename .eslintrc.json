@@ -20,6 +20,9 @@
   "plugins": ["react", "@typescript-eslint", "jest"],
   "rules": {
     "react/react-in-jsx-scope": "off",
-    "no-undef": "off"
+    "no-undef": "off",
+    "@typescript-eslint/consistent-type-definitions": "off",
+    "@typescript-eslint/strict-boolean-expressions": "off",
+    "@typescript-eslint/no-explicit-any": "off"
   }
 }

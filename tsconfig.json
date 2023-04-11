@@ -16,6 +16,7 @@
     "isolatedModules": false,
     "noEmit": true,
     "jsx": "react-jsx",
+    "useUnknownInCatchVariables": false,
     "rootDirs": ["src"],
     "baseUrl": "src",
     "paths": {

@@ -14,7 +14,8 @@
 - [x] Jest
 - [x] Eslint
 - [x] Prettier
-- [x] Commit Lint & Husky
+- [x] Commit Lint
+- [x] Husky
 
 ### Settings already made
 
@@ -23,3 +24,4 @@
 - [x] Babel
 - [x] PWA
 - [x] Coverage Badges
+- [x] Pre-commit

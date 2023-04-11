@@ -1,4 +1,4 @@
-import { Routes } from '@/routes'
+import { Routes } from '@/config/routes'
 import { RouteObject, useRoutes } from 'react-router-dom'
 
 export const routeList: RouteObject[] = [...Routes]

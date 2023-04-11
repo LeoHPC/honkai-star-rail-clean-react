@@ -6,6 +6,7 @@
 <img src="/coverage/badge-statements.svg">
 
 ### Libraries already added
+
 - [x] React
 - [x] TypeScript
 - [x] Vite
@@ -13,11 +14,12 @@
 - [x] Jest
 - [x] Eslint
 - [x] Prettier
-- [x] Commit Lint & Husky 
+- [x] Commit Lint & Husky
 
 ### Settings already made
+
 - [x] Testing Library
-- [x] Alias 
+- [x] Alias
 - [x] Babel
-- [x] PWA 
-- [x] Coverage Badges 
+- [x] PWA
+- [x] Coverage Badges

@@ -13,7 +13,8 @@
     "test:badges": "npm run test:coverage  && jest-coverage-badges",
     "lint": "eslint .",
     "lint:fix": "eslint --fix",
-    "format": "prettier --write './**/*.{js,jsx,ts,tsx,md,json}' --config ./.prettierrc"
+    "format": "prettier --write './**/*.{js,jsx,ts,tsx,md,json}' --config ./.prettierrc",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@babel/preset-env": "^7.21.4",

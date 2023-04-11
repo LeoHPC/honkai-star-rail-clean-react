@@ -1,0 +1,10 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+echo [FORMATING...]
+npm run format
+echo [LINTING...]
+npm run lint
+echo [UNIT BADGES]
+npm run test:badges
+git add .

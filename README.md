@@ -12,11 +12,12 @@
 - [x] TailwindCSS
 - [x] Jest
 - [x] Eslint
+- [x] Prettier
+- [x] Commit Lint & Husky 
 
 ### Settings already made
 - [x] Testing Library
 - [x] Alias 
 - [x] Babel
-- [x] Prettier
 - [x] PWA 
 - [x] Coverage Badges 

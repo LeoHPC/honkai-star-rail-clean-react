@@ -1,5 +1,9 @@
-export enum HttpStatusCode {
-  ok = 200
+import { HttpMethodEnum, HttpStatusCode } from '@/domain/enum'
+
+export type HttpRequest = {
+  url: string
+  method: HttpMethodEnum
+  body?: any
 }
 
 export type HttpResponse<T = any> = {
@@ -8,5 +12,5 @@ export type HttpResponse<T = any> = {
 }
 
 export interface HttpClient<R = any> {
-  get(url: string): Promise<HttpResponse<R>>
+  request: (data: HttpRequest) => Promise<HttpResponse<R>>
 }

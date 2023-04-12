@@ -1,13 +1,17 @@
 import axios, { AxiosResponse } from 'axios'
 
-import { HttpClient, HttpResponse } from '@/domain/protocols'
+import { HttpClient, HttpRequest, HttpResponse } from '@/domain/protocols'
 
 export class AxiosHttpClient implements HttpClient {
-  async get(url: string): Promise<HttpResponse> {
+  async request(data: HttpRequest): Promise<HttpResponse> {
     let axiosResponse: AxiosResponse
 
     try {
-      axiosResponse = await axios.get(url)
+      axiosResponse = await axios.request({
+        url: data.url,
+        data: data.body,
+        method: data.method
+      })
     } catch (error) {
       axiosResponse = error.response
     }

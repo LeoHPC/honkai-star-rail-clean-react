@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-import { AxiosHttpClient } from '@/infra/adapters'
+import { AxiosHttpClient } from '@/shared/infra/adapters'
 import { mockAxios } from '@/test/infra/mocks/axios'
 import { mockHttpRequest, mockHttpResponse } from '@/test/infra/mocks'
 

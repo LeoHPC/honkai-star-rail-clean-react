@@ -1,7 +1,7 @@
 import { faker } from '@faker-js/faker'
 
 import { HttpMethodEnum } from '@/domain/enum'
-import { HttpRequest, HttpResponse } from '@/domain/protocols'
+import { HttpRequest, HttpResponse } from '@/shared/protocols'
 
 export const mockHttpRequest = (): HttpRequest => ({
   url: faker.internet.url(),

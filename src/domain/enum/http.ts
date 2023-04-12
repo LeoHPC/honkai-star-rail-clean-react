@@ -3,5 +3,6 @@ export enum HttpMethodEnum {
 }
 
 export enum HttpStatusCode {
-  OK = 200
+  OK = 200,
+  FORBIDDEN = 403
 }

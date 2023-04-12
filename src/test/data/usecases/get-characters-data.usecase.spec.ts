@@ -1,6 +1,8 @@
 import { faker } from '@faker-js/faker'
 
+import { HttpStatusCode } from '@/domain/enum'
 import { GetCharactersData } from '@/data/usecases'
+import { mockCharacterData } from '@/test/domain/mocks'
 import { CharactersGatewaySpy } from '@/test/data/mocks'
 
 type SutTypes = {
@@ -28,10 +30,27 @@ describe('get characters data use case', () => {
   })
 
   it('should return with the correct length', async () => {
-    const { url, sut } = makeSut()
+    const { url, sut, charactersGatewaySpy } = makeSut()
+
+    charactersGatewaySpy.response = {
+      statusCode: HttpStatusCode.OK,
+      body: mockCharacterData()
+    }
 
     const response = await sut.execute({ url })
 
     expect(response).toHaveLength(1)
+  })
+
+  it('should return an error with an invalid request', async () => {
+    const { sut, charactersGatewaySpy, url } = makeSut()
+
+    charactersGatewaySpy.response = {
+      statusCode: HttpStatusCode.FORBIDDEN
+    }
+
+    const promise = sut.execute({ url })
+
+    await expect(promise).rejects.toThrow(new Error())
   })
 })

@@ -3,5 +3,5 @@ export enum HttpMethodEnum {
 }
 
 export enum HttpStatusCode {
-  ok = 200
+  OK = 200
 }

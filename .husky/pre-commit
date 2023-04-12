@@ -6,5 +6,5 @@ npm run format
 echo [LINTING...]
 npm run lint
 echo [UNIT BADGES]
-npm run test:badges
+npm run test:coverage:badges
 git add .

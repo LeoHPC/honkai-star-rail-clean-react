@@ -1,9 +1,9 @@
 import { RouteObject } from 'react-router-dom'
-import { Home } from '@/presentation/pages'
+import { factoryHomePage } from '@/main/factory/pages'
 
 export const Routes: RouteObject[] = [
   {
     path: '/',
-    element: <Home />
+    element: factoryHomePage()
   }
 ]

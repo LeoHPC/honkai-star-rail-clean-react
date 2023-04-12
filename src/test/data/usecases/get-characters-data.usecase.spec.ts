@@ -2,6 +2,7 @@ import { faker } from '@faker-js/faker'
 
 import { HttpStatusCode } from '@/domain/enum'
 import { GetCharactersData } from '@/data/usecases'
+import { GenericRequestError } from '@/domain/errors'
 import { mockCharacterData } from '@/test/domain/mocks'
 import { CharactersGatewaySpy } from '@/test/data/mocks'
 
@@ -51,6 +52,6 @@ describe('get characters data use case', () => {
 
     const promise = sut.execute({ url })
 
-    await expect(promise).rejects.toThrow(new Error())
+    await expect(promise).rejects.toThrow(new GenericRequestError())
   })
 })

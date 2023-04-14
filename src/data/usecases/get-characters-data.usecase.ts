@@ -4,7 +4,7 @@ import { CharactersGateway } from '@/domain/gateway'
 import { CharactersDataProps } from '@/domain/models'
 import { GenericRequestError } from '@/domain/errors'
 
-export class GetCharactersData {
+export class GetCharactersDataUseCase {
   constructor(private readonly charactersGateway: CharactersGateway) {}
 
   async execute(UrlInputDTO: UrlInputDTO): Promise<CharactersDataProps[]> {

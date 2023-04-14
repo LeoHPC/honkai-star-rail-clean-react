@@ -1,5 +1,5 @@
-import { GetCharactersData } from '@/data/usecases'
+import { GetCharactersDataUseCase } from '@/data/usecases'
 
 export interface HomeProps {
-  getCharactersUseCase: GetCharactersData
+  getCharactersUseCase: GetCharactersDataUseCase
 }

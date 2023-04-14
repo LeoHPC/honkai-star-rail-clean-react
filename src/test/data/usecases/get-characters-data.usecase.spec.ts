@@ -1,14 +1,14 @@
 import { faker } from '@faker-js/faker'
 
 import { HttpStatusCode } from '@/domain/enum'
-import { GetCharactersData } from '@/data/usecases'
+import { GetCharactersDataUseCase } from '@/data/usecases'
 import { GenericRequestError } from '@/domain/errors'
 import { mockCharacterData } from '@/test/domain/mocks'
 import { CharactersGatewaySpy } from '@/test/data/mocks'
 
 type SutTypes = {
   url: string
-  sut: GetCharactersData
+  sut: GetCharactersDataUseCase
   charactersGatewaySpy: CharactersGatewaySpy
 }
 
@@ -16,7 +16,7 @@ const makeSut = (): SutTypes => {
   const url = faker.internet.url()
 
   const charactersGatewaySpy = new CharactersGatewaySpy()
-  const sut = new GetCharactersData(charactersGatewaySpy)
+  const sut = new GetCharactersDataUseCase(charactersGatewaySpy)
 
   return { url, sut, charactersGatewaySpy }
 }

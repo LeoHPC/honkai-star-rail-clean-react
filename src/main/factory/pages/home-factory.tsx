@@ -1,12 +1,8 @@
-import { GetCharactersDataUseCase } from '@/data/usecases'
-import { CharactersHttpGateway } from '@/infra/gateway'
+// Component
 import { Home } from '@/presentation/pages'
-import { AxiosHttpClient } from '@/shared/infra/adapters'
+// Factories
+import { factoryGetCharactersDataUseCase } from '@/main/factory/usecases'
 
 export const factoryHomePage = (): JSX.Element => {
-  const httpClient = new AxiosHttpClient()
-  const charactersGateway = new CharactersHttpGateway(httpClient)
-  const getCharactersUseCase = new GetCharactersDataUseCase(charactersGateway)
-
-  return <Home getCharactersUseCase={getCharactersUseCase} />
+  return <Home getCharactersDataUseCase={factoryGetCharactersDataUseCase()} />
 }

@@ -3,7 +3,7 @@ import { BrowserRouter } from 'react-router-dom'
 
 import '@/shared/styles/global.css'
 
-import { RootRouter } from './routes/root-router'
+import { RootRouter } from './config/routes/root-router'
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <BrowserRouter>

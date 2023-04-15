@@ -1,27 +1,42 @@
+import '@testing-library/jest-dom'
+import * as ReactQuery from 'react-query'
 import { QueryClient, QueryClientProvider } from 'react-query'
-import { Matcher, MatcherOptions, render } from '@testing-library/react'
+import { RenderResult, cleanup, render, waitFor } from '@testing-library/react'
 
 import { factoryHomePage } from '@/main/factory/pages'
 
 type SutTypes = {
-  getByTestId: (id: Matcher, options?: MatcherOptions | undefined) => HTMLElement
+  component: RenderResult
 }
 
 const makeSut = (): SutTypes => {
   const queryClient = new QueryClient()
   const HomeComponent = <QueryClientProvider client={queryClient}>{factoryHomePage()}</QueryClientProvider>
 
-  const { getByTestId } = render(HomeComponent)
+  const component = render(HomeComponent)
 
-  return { getByTestId }
+  return { component }
 }
 
 describe('Home Page', () => {
   it('should render loading component on page mount', () => {
-    const { getByTestId } = makeSut()
+    const { component } = makeSut()
 
-    const loadingPage = getByTestId('loading-page')
+    const loadingPage = component.getByTestId('loading-page')
 
     expect(loadingPage.childElementCount).toBe(1)
+    cleanup()
+  })
+
+  it('should show a message after request loading', async () => {
+    jest
+      .spyOn(ReactQuery, 'useQuery')
+      .mockImplementation(jest.fn().mockReturnValue({ data: { test: '' }, isLoading: false, isSuccess: true }))
+
+    const { component } = makeSut()
+
+    const homeMessage = await waitFor(() => component.getByTestId('home-message'))
+
+    expect(homeMessage).toBeInTheDocument()
   })
 })

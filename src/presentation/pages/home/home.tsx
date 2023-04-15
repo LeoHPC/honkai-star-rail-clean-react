@@ -17,6 +17,7 @@ const useHome = ({ getCharactersDataUseCase }: HomeProps) => {
 export const Home = (props: HomeProps): JSX.Element => {
   const { query } = useHome(props)
 
-  console.log(query)
-  return <LoadingBackground />
+  if (query.isLoading) return <LoadingBackground />
+
+  return <h1 data-testid="home-message">May this journey lead us starwards</h1>
 }

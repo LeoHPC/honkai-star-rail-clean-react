@@ -18,7 +18,9 @@
 - [x] Commit Lint
 - [x] Husky
 - [x] Axios
-- [ ] React Query
+- [x] React Query
+- [ ] React Lazy Load Image Component
+- [ ] StoryBook
 
 ### Settings already made
 

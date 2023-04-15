@@ -18,6 +18,7 @@
 - [x] Commit Lint
 - [x] Husky
 - [x] Axios
+- [ ] React Query
 
 ### Settings already made
 

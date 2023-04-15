@@ -4,6 +4,7 @@ import { QueryClient, QueryClientProvider } from 'react-query'
 import { RenderResult, cleanup, render, waitFor } from '@testing-library/react'
 
 import { factoryHomePage } from '@/main/factory/pages'
+import { mockCharacterData } from '@/test/domain/mocks'
 
 type SutTypes = {
   component: RenderResult
@@ -31,7 +32,7 @@ describe('Home Page', () => {
   it('should show a message after request loading', async () => {
     jest
       .spyOn(ReactQuery, 'useQuery')
-      .mockImplementation(jest.fn().mockReturnValue({ data: { test: '' }, isLoading: false, isSuccess: true }))
+      .mockImplementation(jest.fn().mockReturnValue({ data: mockCharacterData(), isLoading: false, isSuccess: true }))
 
     const { component } = makeSut()
 

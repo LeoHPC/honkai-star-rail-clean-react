@@ -1,7 +1,12 @@
 // Types
 import { SpinnerProps } from './types'
 
-export const Spinner = ({ backgroundColor, fillColor, largeSize = 16, smallSize = 12 }: SpinnerProps): JSX.Element => {
+export const Spinner = ({
+  backgroundColor,
+  fillColor,
+  largeSize = '16',
+  smallSize = '12'
+}: SpinnerProps): JSX.Element => {
   return (
     <svg
       aria-hidden="true"

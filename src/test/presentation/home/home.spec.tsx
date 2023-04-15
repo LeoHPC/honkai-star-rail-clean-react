@@ -1,10 +1,10 @@
 import { render } from '@testing-library/react'
 
-import { factoryHomePage } from '@/main/factory/pages'
+import { factoryHomePageSpy } from '@/test/main/factories/mocks'
 
 describe('Home Page', () => {
   it('should render loading component on page mount', () => {
-    const { getByTestId } = render(factoryHomePage())
+    const { getByTestId } = render(factoryHomePageSpy())
 
     const loadingPage = getByTestId('loading-page')
 

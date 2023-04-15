@@ -16,7 +16,7 @@ const makeSut = (): SutTypes => {
   const url = faker.internet.url()
 
   const charactersGatewaySpy = new CharactersGatewaySpy()
-  const sut = new GetCharactersDataUseCase(charactersGatewaySpy)
+  const sut = new GetCharactersDataUseCase(url, charactersGatewaySpy)
 
   return { url, sut, charactersGatewaySpy }
 }
@@ -25,32 +25,32 @@ describe('get characters data use case', () => {
   it('should be call with the correct url', () => {
     const { url, sut, charactersGatewaySpy } = makeSut()
 
-    sut.execute({ url })
+    sut.execute()
 
     expect(charactersGatewaySpy.url).toBe(url)
   })
 
   it('should return with the correct length', async () => {
-    const { url, sut, charactersGatewaySpy } = makeSut()
+    const { sut, charactersGatewaySpy } = makeSut()
 
     charactersGatewaySpy.response = {
       statusCode: HttpStatusCode.OK,
       body: mockCharacterData()
     }
 
-    const response = await sut.execute({ url })
+    const response = await sut.execute()
 
     expect(response).toHaveLength(1)
   })
 
   it('should return an error with an invalid request', async () => {
-    const { sut, charactersGatewaySpy, url } = makeSut()
+    const { sut, charactersGatewaySpy } = makeSut()
 
     charactersGatewaySpy.response = {
       statusCode: HttpStatusCode.FORBIDDEN
     }
 
-    const promise = sut.execute({ url })
+    const promise = sut.execute()
 
     await expect(promise).rejects.toThrow(new GenericRequestError())
   })

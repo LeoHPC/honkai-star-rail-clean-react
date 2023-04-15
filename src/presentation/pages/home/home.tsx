@@ -1,7 +1,7 @@
 import { useQuery } from 'react-query'
 
 // Components
-import { LoadingBackground } from '@/shared/components'
+import { Header, LoadingBackground } from '@/shared/components'
 // Types
 import { HomeProps } from './types'
 import { CharactersDataProps } from '@/domain/models'
@@ -19,5 +19,10 @@ export const Home = (props: HomeProps): JSX.Element => {
 
   if (query.isLoading) return <LoadingBackground />
 
-  return <h1 data-testid="home-message">May this journey lead us starwards</h1>
+  return (
+    <div>
+      <Header />
+      <h1 data-testid="home-message">May this journey lead us starward</h1>
+    </div>
+  )
 }

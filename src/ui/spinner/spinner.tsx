@@ -1,16 +1,15 @@
 // Types
+import { useMemo } from 'react'
 import { SpinnerProps } from './types'
 
-export const Spinner = ({
-  backgroundColor,
-  fillColor,
-  largeSize = '16',
-  smallSize = '12'
-}: SpinnerProps): JSX.Element => {
+export const Spinner = ({ backgroundColor, fillColor, largeSize, smallSize }: SpinnerProps): JSX.Element => {
+  const largeWidthSize = useMemo(() => (largeSize ? `sm:w-${largeSize}` : 'sm:w-16'), [largeSize])
+  const smallWidthSize = useMemo(() => (smallSize ? `sm:w-${smallSize}` : 'sm:w-16'), [smallSize])
+
   return (
     <svg
       aria-hidden="true"
-      className={`sm:w-${largeSize} w-${smallSize} sm:h-${largeSize} h-${smallSize} mr-2 animate-spin`}
+      className={`${largeWidthSize} ${smallWidthSize} mr-2 animate-spin`}
       viewBox="0 0 100 101"
       fill="none"
       xmlns="http://www.w3.org/2000/svg">

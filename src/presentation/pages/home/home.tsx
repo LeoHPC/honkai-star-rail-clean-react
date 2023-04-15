@@ -1,7 +1,7 @@
 import { useQuery } from 'react-query'
 
 // Components
-import { LoadingBackground } from './components'
+import { LoadingBackground } from '@/shared/components'
 // Types
 import { HomeProps } from './types'
 import { CharactersDataProps } from '@/domain/models'

@@ -14,6 +14,7 @@ const config: StorybookConfig = {
   core: {
     builder: '@storybook/builder-vite'
   },
+  staticDirs: ['../public'],
   async viteFinal(config) {
     return mergeConfig(config, {
       optimizeDeps: {

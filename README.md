@@ -13,6 +13,7 @@
 - [x] Vite
 - [x] TailwindCSS
 - [x] Jest
+- [x] Testing Library
 - [x] Eslint
 - [x] Prettier
 - [x] Commit Lint
@@ -24,10 +25,11 @@
 
 ### Settings already made
 
-- [x] Testing Library
 - [x] Alias
 - [x] Babel
 - [x] PWA
 - [x] Coverage Badges
 - [x] Pre-commit
 - [x] Documenting Components w/ Storybook
+- [x] [Deploy Platform](https://honkai-star-rail-clean-react.vercel.app/)
+- [x] [Deploy Storybook](https://643c52c710255e45ba42fd35-ksiiytdwtz.chromatic.com/)

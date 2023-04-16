@@ -19,8 +19,8 @@
 - [x] Husky
 - [x] Axios
 - [x] React Query
+- [x] Storybook
 - [ ] React Lazy Load Image Component
-- [ ] StoryBook
 
 ### Settings already made
 

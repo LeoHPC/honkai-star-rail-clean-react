@@ -32,4 +32,4 @@
 - [x] Pre-commit
 - [x] Documenting Components w/ Storybook
 - [x] [Deploy Platform](https://honkai-star-rail-clean-react.vercel.app/)
-- [x] [Deploy Storybook](https://643c52c710255e45ba42fd35-ksiiytdwtz.chromatic.com/)
+- [x] [Deploy Storybook](https://643c52c710255e45ba42fd35-dmgkbeeyer.chromatic.com/)

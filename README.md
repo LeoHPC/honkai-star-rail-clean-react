@@ -30,3 +30,4 @@
 - [x] PWA
 - [x] Coverage Badges
 - [x] Pre-commit
+- [x] Documenting Components w/ Storybook

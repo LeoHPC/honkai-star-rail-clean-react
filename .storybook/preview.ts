@@ -1,3 +1,4 @@
+import { themes } from '@storybook/theming'
 import type { Preview } from '@storybook/react'
 
 import '../src/shared/styles/global.css'
@@ -13,6 +14,9 @@ const preview: Preview = {
     },
     backgrounds: {
       default: 'dark'
+    },
+    docs: {
+      theme: themes.dark
     }
   }
 }

@@ -4,7 +4,7 @@ import { ExternalLinkIcon } from './external-link-icon'
 import { Props } from './types'
 
 export default {
-  title: 'UI/Spinner',
+  title: 'Icons/External Link',
   component: ExternalLinkIcon,
   args: {
     fillColor: '#19C6D2',

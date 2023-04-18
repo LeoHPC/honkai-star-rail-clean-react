@@ -24,7 +24,13 @@ export const Home = (props: HomeProps): JSX.Element => {
       <div className="relative w-full h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute top-0 left-0 w-full">
           <div className="absolute top-0 left-0 bg-zinc-900 bg-opacity-40 w-full h-screen" />
-          <video autoPlay loop muted className="object-cover w-full h-screen" aria-labelledby="video-transcription">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="object-cover w-full h-screen"
+            aria-labelledby="video-transcription">
             <source src="./video/background-video.mp4#t=0.1" type="video/mp4" />
           </video>
           <p id="video-transcription" className="text-gray-200 bg-zinc-900 bg-opacity-40 absolute bottom-0 right-2">

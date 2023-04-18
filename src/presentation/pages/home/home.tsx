@@ -1,10 +1,12 @@
 import { useQuery } from 'react-query'
 
 // Components
+import { BackgroundVideo } from '@/presentation/components'
 import { Header, LoadingBackground } from '@/shared/components'
 // Types
 import { HomeProps } from './types'
 import { CharactersDataProps } from '@/domain/models'
+// Assets
 import { PlayButtonIcon } from '@/presentation/assets'
 
 const useHome = ({ getCharactersDataUseCase }: HomeProps) => {
@@ -23,15 +25,7 @@ export const Home = (props: HomeProps): JSX.Element => {
   return (
     <div>
       <div className="relative w-full h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute top-0 left-0 w-full">
-          <div className="absolute top-0 left-0 bg-black bg-opacity-40 w-full h-screen" />
-          <video autoPlay loop muted playsInline className="object-cover w-full h-screen" aria-hidden="true">
-            <source src="./video/background-video.mp4#t=0.1" type="video/mp4" />
-          </video>
-          <p className="text-gray-200 bg-black bg-opacity-40 absolute bottom-0 right-2" aria-hidden="true">
-            Game engine footage showing character Blade
-          </p>
-        </div>
+        <BackgroundVideo />
 
         <div className="z-10">
           <div className="absolute left-0 top-0 w-full">

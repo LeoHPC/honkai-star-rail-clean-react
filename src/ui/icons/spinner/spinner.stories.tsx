@@ -4,7 +4,7 @@ import { Spinner } from './spinner'
 import { SpinnerProps } from './types'
 
 export default {
-  title: 'UI/Spinner',
+  title: 'Icons/Spinner',
   component: Spinner,
   args: {
     backgroundColor: '#ccc',

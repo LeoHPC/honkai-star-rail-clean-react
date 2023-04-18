@@ -4,7 +4,7 @@ export const PlayButtonIcon = () => {
       version="1.1"
       id="Layer_1"
       xmlns="http://www.w3.org/2000/svg"
-      className="w-28 h-28 animate-pulse"
+      className="md:w-28 sm:w-20 w-16 md:h-28 sm:h-20 h-16 animate-pulse"
       viewBox="0 0 512 512"
       xmlSpace="preserve"
       aria-hidden="true">

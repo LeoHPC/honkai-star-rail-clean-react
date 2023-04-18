@@ -2,7 +2,7 @@ import { useQuery } from 'react-query'
 
 // Components
 import { LoadingBackground } from '@/shared/components'
-import { HomeFirstSection } from '@/presentation/components'
+import { HomeCharactersSection, HomeFirstSection } from '@/presentation/components'
 // Types
 import { HomeProps } from './types'
 import { CharactersDataProps } from '@/domain/models'
@@ -23,9 +23,7 @@ export const Home = (props: HomeProps): JSX.Element => {
   return (
     <div>
       <HomeFirstSection />
-      <div id="characters" className="h-screen w-full">
-        <h1 className="z-10">next content</h1>
-      </div>
+      <HomeCharactersSection />
     </div>
   )
 }

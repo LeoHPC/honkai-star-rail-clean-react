@@ -3,7 +3,7 @@ import { ExternalHeaderLink, InternalHeaderLink } from '@/shared/components'
 
 export const Header = () => {
   return (
-    <header>
+    <header className="absolute left-0 top-0 w-full">
       <nav>
         <ul>
           <li>

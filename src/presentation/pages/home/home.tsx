@@ -28,9 +28,8 @@ export const Home = (props: HomeProps): JSX.Element => {
         <BackgroundVideo />
 
         <div className="z-10">
-          <div className="absolute left-0 top-0 w-full">
-            <Header />
-          </div>
+          <Header />
+
           <section className="bg-gray-950 w-screen p-8 flex flex-col items-center justify-center gap-6 bg-opacity-40">
             <button
               aria-label="Watch our gameplay trailer on YouTube!"

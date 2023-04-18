@@ -52,7 +52,9 @@ export const Home = (props: HomeProps): JSX.Element => {
           </section>
         </div>
       </div>
-      <h1 className="z-10">next content</h1>
+      <div id="characters" className="h-screen w-full">
+        <h1 className="z-10">next content</h1>
+      </div>
     </div>
   )
 }

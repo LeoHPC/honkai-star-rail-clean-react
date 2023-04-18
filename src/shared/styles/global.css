@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  @apply scroll-smooth
+}
+
 body {
   @apply font-monda m-0 p-0 box-border
 }

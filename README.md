@@ -21,7 +21,7 @@
 - [x] Axios
 - [x] React Query
 - [x] Storybook
-- [ ] React Lazy Load Image Component
+- [ ] HeadlessUI
 
 ### Settings already made
 

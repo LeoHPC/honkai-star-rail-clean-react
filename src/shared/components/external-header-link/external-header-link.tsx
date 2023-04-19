@@ -1,8 +1,12 @@
 // Components
-import { HeaderLink } from '@/ui'
+import { ExternalLinkIcon, HeaderLink } from '@/ui'
 // Types
 import { ExternalHeaderLinkProps } from './types'
 
 export const ExternalHeaderLink = ({ label, ...props }: ExternalHeaderLinkProps) => {
-  return <HeaderLink label={label} target="_blank" rel="noopener noreferrer" {...props} />
+  return (
+    <HeaderLink label={label} target="_blank" rel="noopener noreferrer" {...props}>
+      <ExternalLinkIcon fillColor="rgb(202 138 4)" classNames="w-6 h-6" />
+    </HeaderLink>
+  )
 }

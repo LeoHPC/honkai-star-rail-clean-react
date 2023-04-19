@@ -1,5 +1,5 @@
-import { Spinner } from '@/ui'
+import { SpinnerIcon } from '@/ui'
 
 export const LoadingSpinner = () => {
-  return <Spinner backgroundColor="#E5E7EB" fillColor="#DC2626" classNames="sm:w-16 w-12 sm:h-16 h-12" />
+  return <SpinnerIcon backgroundColor="#E5E7EB" fillColor="#DC2626" classNames="sm:w-16 w-12 sm:h-16 h-12" />
 }

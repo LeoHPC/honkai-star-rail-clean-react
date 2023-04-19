@@ -1,7 +1,7 @@
 // Types
 import { SpinnerProps } from './types'
 
-export const Spinner = ({ backgroundColor, fillColor, classNames }: SpinnerProps): JSX.Element => {
+export const SpinnerIcon = ({ backgroundColor, fillColor, classNames }: SpinnerProps): JSX.Element => {
   return (
     <svg
       aria-hidden="true"

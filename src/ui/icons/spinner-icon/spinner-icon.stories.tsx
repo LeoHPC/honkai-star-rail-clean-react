@@ -1,11 +1,11 @@
 import { Meta, StoryObj } from '@storybook/react'
 
-import { Spinner } from './spinner'
+import { SpinnerIcon } from './spinner-icon'
 import { SpinnerProps } from './types'
 
 export default {
   title: 'Icons/Spinner',
-  component: Spinner,
+  component: SpinnerIcon,
   args: {
     backgroundColor: '#ccc',
     fillColor: '#19C6D2',

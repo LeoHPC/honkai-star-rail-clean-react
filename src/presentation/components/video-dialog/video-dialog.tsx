@@ -1,4 +1,4 @@
-import { Fragment } from 'react'
+import { Fragment, useRef } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 
 // Components
@@ -7,9 +7,11 @@ import { ExternalLinkIcon } from '@/ui'
 import { Props } from './types'
 
 export const VideoDialog = ({ isOpen, closeModal }: Props) => {
+  const initialFocus = useRef(null)
+
   return (
     <Transition appear show={isOpen} as={Fragment}>
-      <Dialog as="div" className="relative z-20" onClose={closeModal} autoFocus={false}>
+      <Dialog as="div" className="relative z-20" onClose={closeModal} initialFocus={initialFocus}>
         <Transition.Child
           as={Fragment}
           enter="ease-out duration-300"
@@ -82,6 +84,7 @@ export const VideoDialog = ({ isOpen, closeModal }: Props) => {
                   width="100%"
                   height="100%"
                   src="https://www.youtube.com/embed/yLFpFp5r0hk"
+                  ref={initialFocus}
                   className="h-fit sm:h-72 md:h-80 lg:h-[480px] border-8 border-red-600 border-double"
                   aria-hidden="true"
                 />

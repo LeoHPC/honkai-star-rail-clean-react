@@ -2,6 +2,7 @@ import { Fragment, useState } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 
 import { PlayButtonIcon } from '@/presentation/assets'
+import { ExternalLinkIcon } from '@/ui'
 
 const useBannerMessage = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -60,19 +61,19 @@ export const BannerMessage = () => {
                 leave="ease-in duration-200"
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95">
-                <Dialog.Panel className="w-full md:max-w-2xl lg:min-h-[600px] lg:max-w-4xl transform rounded-2xl bg-gray-900 p-6 text-center align-middle shadow-xl transition-all">
+                <Dialog.Panel className="w-full md:max-w-2xl lg:min-h-[600px] lg:max-w-4xl transform rounded-2xl bg-gray-900 p-6 shadow-xl transition-all">
                   <Dialog.Title as="h2" className="text-lg sm:text-2xl font-medium text-gray-200 mb-6 font-audio">
-                    Checkout our newest video on{' '}
-                    <a
-                      href="https://www.youtube.com/watch?v=yLFpFp5r0hk"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="underline text-red-600 hover:text-red-700 transition-colors duration-300 border-none outline-none focus-visible:outline-4 focus-visible:outline-blue-500"
-                      aria-label="YouTube (opens in a new tab)">
-                      YouTube
-                    </a>
-                    !
+                    Checkout our newest video on <span className="text-red-600">Youtube</span>!
                   </Dialog.Title>
+
+                  <a
+                    href="https://www.youtube.com/watch?v=yLFpFp5r0hk"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline text-gray-200 text-right w-full flex items-center gap-1 justify-end hover:brightness-125 border-none outline-none focus-visible:outline-4 focus-visible:outline-blue-500">
+                    open video in a new tab
+                    <ExternalLinkIcon fillColor="rgb(229 231 235)" classNames="w-4 h-4" />
+                  </a>
 
                   <button
                     onClick={closeModal}

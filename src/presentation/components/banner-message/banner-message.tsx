@@ -78,7 +78,7 @@ export const BannerMessage = () => {
                   <button
                     onClick={closeModal}
                     className="absolute top-[-1.8rem] right-[-1.4rem] border-none outline-none focus-visible:outline-4 focus-visible:outline-blue-500"
-                    aria-label="Close dialog button">
+                    aria-label="Close dialog">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 100 100"

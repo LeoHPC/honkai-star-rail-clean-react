@@ -51,7 +51,7 @@ export const BannerMessage = () => {
           </Transition.Child>
 
           <div className="fixed inset-0 overflow-y-auto">
-            <div className="flex min-h-full items-center justify-center pr-8 pl-4 py-4 text-center relative">
+            <div className="flex min-h-full items-center justify-center p-4 text-center relative">
               <Transition.Child
                 as={Fragment}
                 enter="ease-out duration-300"

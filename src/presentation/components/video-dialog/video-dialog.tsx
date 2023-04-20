@@ -42,14 +42,14 @@ export const VideoDialog = ({ isOpen, closeModal }: Props) => {
                   href="https://www.youtube.com/watch?v=yLFpFp5r0hk"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="underline text-gray-200 text-right w-full flex items-center gap-1 justify-end hover:brightness-125 border-none outline-none focus-visible:outline-4 focus-visible:outline-blue-500">
+                  className="underline text-gray-200 text-right w-full flex items-center gap-1 justify-end hover:brightness-125 border-none outline-none focus-visible:outline-4 focus-visible:outline-fuchsia-500">
                   open video in a new tab
                   <ExternalLinkIcon fillColor="rgb(229 231 235)" classNames="w-4 h-4" />
                 </a>
 
                 <button
                   onClick={closeModal}
-                  className="absolute top-[-1.8rem] right-[-1.4rem] border-none outline-none focus-visible:outline-4 focus-visible:outline-blue-500"
+                  className="absolute top-[-1.8rem] right-[-1.4rem] border-none outline-none focus-visible:outline-4 focus-visible:outline-fuchsia-500"
                   data-testid="close-dialog-button"
                   aria-label="Close dialog">
                   <svg

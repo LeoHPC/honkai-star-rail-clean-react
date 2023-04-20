@@ -28,7 +28,7 @@ export const BannerMessage = () => {
           title="Watch our gameplay trailer on YouTube!"
           aria-label="Watch our gameplay trailer on YouTube! (opens dialog)"
           data-testid="open-dialog-button"
-          className="hover:brightness-110 transition-all border-none outline-none focus-visible:outline-blue-500 focus-visible:outline-4">
+          className="hover:brightness-110 transition-all border-none outline-none focus-visible:outline-fuchsia-500 focus-visible:outline-4">
           <PlayButtonIcon />
         </button>
         <h1

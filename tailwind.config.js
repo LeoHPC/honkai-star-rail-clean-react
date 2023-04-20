@@ -5,8 +5,7 @@ export default {
     extend: {
       backgroundImage: {
         'loading-background': "url('../img/loading-background.webp')",
-        'home-background': "url('../img/home-background.webp)",
-        'characters-background': "url('../img/characters-background.webp)"
+        'home-background': "url('../img/home-background.webp')"
       },
       fontFamily: {
         monda: ['Monda', 'sans-serif'],

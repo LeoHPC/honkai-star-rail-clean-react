@@ -21,7 +21,7 @@
 - [x] Axios
 - [x] React Query
 - [x] Storybook
-- [ ] HeadlessUI
+- [x] HeadlessUI
 
 ### Settings already made
 

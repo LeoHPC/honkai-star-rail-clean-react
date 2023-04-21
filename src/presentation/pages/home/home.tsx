@@ -10,17 +10,17 @@ import { CharactersEnum } from '@/domain/enum'
 import { CharactersDataProps } from '@/domain/models'
 
 const useHome = ({ getCharactersDataUseCase }: HomeProps) => {
-  const [currentCharacter] = useState<CharactersEnum>(CharactersEnum.WELT)
+  const [currentCharacter, setCurrentCharacter] = useState<CharactersEnum>(CharactersEnum.WELT)
 
   const query = useQuery<CharactersDataProps[], Error>(['charactersData'], async () => {
     return await getCharactersDataUseCase.execute()
   })
 
-  return { query, currentCharacter }
+  return { query, currentCharacter, setCurrentCharacter }
 }
 
 export const Home = (props: HomeProps): JSX.Element => {
-  const { query, currentCharacter } = useHome(props)
+  const { query, currentCharacter, setCurrentCharacter } = useHome(props)
 
   if (query.isLoading || query.data === undefined) return <LoadingBackground />
 
@@ -35,7 +35,11 @@ export const Home = (props: HomeProps): JSX.Element => {
         </span>
       </a>
       <HomeFirstSection />
-      <HomeCharactersSection characterData={query.data[currentCharacter]} />
+      <HomeCharactersSection
+        characterData={query.data[currentCharacter]}
+        characters={query.data}
+        setCurrentCharacter={setCurrentCharacter}
+      />
     </div>
   )
 }

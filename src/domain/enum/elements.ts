@@ -1,3 +1,4 @@
 export enum ElementsEnum {
-  Imaginary = 'Imaginary'
+  Imaginary = 'Imaginary',
+  Fire = 'Fire'
 }

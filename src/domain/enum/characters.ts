@@ -1,3 +1,4 @@
 export enum CharactersEnum {
-  WELT
+  WELT,
+  HIMEKO
 }

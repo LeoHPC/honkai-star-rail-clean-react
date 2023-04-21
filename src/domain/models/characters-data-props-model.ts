@@ -1,3 +1,5 @@
+import { ElementsEnum } from '@/domain/enum'
+
 export interface CharactersDataProps {
   id: string
   name: string
@@ -5,6 +7,6 @@ export interface CharactersDataProps {
   rarity: number
   avatar: string
   va: string
-  element: string
+  element: ElementsEnum
   description: string
 }

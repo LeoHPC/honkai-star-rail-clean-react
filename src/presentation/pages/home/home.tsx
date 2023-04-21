@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { useQuery } from 'react-query'
 
 // Components
@@ -5,20 +6,23 @@ import { LoadingBackground } from '@/shared/components'
 import { HomeCharactersSection, HomeFirstSection } from '@/presentation/components'
 // Types
 import { HomeProps } from './types'
+import { CharactersEnum } from '@/domain/enum'
 import { CharactersDataProps } from '@/domain/models'
 
 const useHome = ({ getCharactersDataUseCase }: HomeProps) => {
+  const [currentCharacter] = useState<CharactersEnum>(CharactersEnum.WELT)
+
   const query = useQuery<CharactersDataProps[], Error>(['charactersData'], async () => {
     return await getCharactersDataUseCase.execute()
   })
 
-  return { query }
+  return { query, currentCharacter }
 }
 
 export const Home = (props: HomeProps): JSX.Element => {
-  const { query } = useHome(props)
+  const { query, currentCharacter } = useHome(props)
 
-  if (query.isLoading) return <LoadingBackground />
+  if (query.isLoading || query.data === undefined) return <LoadingBackground />
 
   return (
     <div className="relative overflow-hidden">
@@ -31,7 +35,7 @@ export const Home = (props: HomeProps): JSX.Element => {
         </span>
       </a>
       <HomeFirstSection />
-      <HomeCharactersSection />
+      <HomeCharactersSection characterData={query.data[currentCharacter]} />
     </div>
   )
 }

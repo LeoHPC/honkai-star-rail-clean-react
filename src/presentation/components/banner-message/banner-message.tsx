@@ -22,7 +22,7 @@ export const BannerMessage = () => {
 
   return (
     <>
-      <section className="bg-gray-950 w-screen p-8 flex flex-col items-center justify-center gap-6 bg-opacity-40">
+      <section className="bg-gray-950 w-screen p-8 flex flex-col items-center justify-center sm:gap-6 gap-2 bg-opacity-40">
         <button
           onClick={openModal}
           title="Watch our gameplay trailer on YouTube!"

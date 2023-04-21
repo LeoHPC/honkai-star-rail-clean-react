@@ -4,7 +4,7 @@ import { ExternalHeaderLink, InternalHeaderLink } from '@/shared/components'
 
 export const Header = () => {
   return (
-    <header className="absolute left-0 top-0 w-full bg-gray-900 bg-opacity-50 sm:px-4 sm:py-2 flex justify-end">
+    <header className="absolute left-0 top-0 w-full bg-glass shadow-glass backdrop-blur-glass sm:px-4 sm:py-2 flex justify-end">
       <nav className="sm:flex hidden">
         <ul className="flex flex-row gap-8 justify-end">
           <li>

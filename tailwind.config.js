@@ -11,6 +11,15 @@ export default {
       fontFamily: {
         monda: ['Monda', 'sans-serif'],
         audio: ['Audiowide', 'cursive']
+      },
+      colors: {
+        glass: 'rgba(255, 255, 255, 0.2)'
+      },
+      boxShadow: {
+        glass: '0 4px 30px rgba(0, 0, 0, 0.1)'
+      },
+      backdropBlur: {
+        glass: '1.7px'
       }
     }
   },

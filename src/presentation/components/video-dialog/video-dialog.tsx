@@ -1,8 +1,6 @@
 import { Fragment, useRef } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 
-// Components
-import { ExternalLinkIcon } from '@/ui'
 // Types
 import { Props } from './types'
 
@@ -42,9 +40,9 @@ export const VideoDialog = ({ isOpen, closeModal }: Props) => {
                   href="https://www.youtube.com/watch?v=yLFpFp5r0hk"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="underline text-gray-200 text-right w-full flex items-center gap-1 justify-end hover:brightness-125 border-none outline-none focus-visible:outline-4 focus-visible:outline-fuchsia-500">
+                  ref={initialFocus}
+                  className="underline text-gray-200 text-right w-full flex items-center gap-1 justify-end hover:brightness-125 border-none outline-none focus-visible:text-fuchsia-500">
                   open video in a new tab
-                  <ExternalLinkIcon fillColor="rgb(229 231 235)" classNames="w-4 h-4" />
                 </a>
 
                 <button
@@ -85,7 +83,6 @@ export const VideoDialog = ({ isOpen, closeModal }: Props) => {
                   width="100%"
                   height="100%"
                   src="https://www.youtube.com/embed/yLFpFp5r0hk"
-                  ref={initialFocus}
                   className="h-fit sm:h-72 md:h-80 lg:h-[480px] border-8 border-red-600 border-double"
                   aria-hidden="true"
                 />

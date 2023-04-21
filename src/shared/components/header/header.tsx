@@ -31,7 +31,9 @@ export const Header = () => {
 
       <Menu as="div" className="sm:hidden relative inline-block text-left">
         <div>
-          <Menu.Button className="inline-flex w-full justify-center bg-black bg-opacity-0 px-2 py-1 outline-none border-none focus-visible:outline-4 focus-visible:outline-fuchsia-500">
+          <Menu.Button
+            data-testid="responsive-menu-button"
+            className="inline-flex w-full justify-center bg-black bg-opacity-0 px-2 py-1 outline-none border-none focus-visible:outline-4 focus-visible:outline-fuchsia-500">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="36px" height="36px">
               <linearGradient
                 id="EIPc0qTNCX0EujYwtxKaXa"
@@ -94,6 +96,7 @@ export const Header = () => {
                     href="https://hsr.hoyoverse.com/en-us/home?utm_source=hsrofficalweb&utm_medium=fab&utm_campaign=button"
                     target="_blank"
                     rel="noopener noreferrer"
+                    data-testid="responsive-menu-official-website"
                     aria-label="official website (opens in a new tab)"
                     className={`${
                       active ? 'bg-yellow-500 text-gray-900' : 'text-gray-200 bg-gray-700'
@@ -108,6 +111,7 @@ export const Header = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     href="https://hsr.hoyoverse.com/en-us/"
+                    data-testid="responsive-menu-register-now"
                     aria-label="register now (opens in a new tab)"
                     className={`${
                       active ? 'bg-yellow-500 text-gray-900' : 'text-gray-200 bg-gray-700'
@@ -120,6 +124,7 @@ export const Header = () => {
                 {({ active }) => (
                   <a
                     href="#characters"
+                    data-testid="responsive-menu-characters"
                     aria-label="come see our beautiful characters"
                     className={`${
                       active ? 'bg-yellow-500 text-gray-900' : 'text-gray-200 bg-gray-700'

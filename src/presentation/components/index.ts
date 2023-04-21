@@ -1,4 +1,6 @@
 export * from './video-dialog/video-dialog'
 export * from './banner-message/banner-message'
+export * from './characters-info/characters-info'
 export * from './home-first-section/home-first-section'
+export * from './select-your-character/select-your-character'
 export * from './home-characters-section/home-characters-section'

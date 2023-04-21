@@ -40,7 +40,7 @@ describe('get characters data use case', () => {
 
     const response = await sut.execute()
 
-    expect(response).toHaveLength(1)
+    expect(response).toHaveLength(2)
   })
 
   it('should return an error with an invalid request', async () => {

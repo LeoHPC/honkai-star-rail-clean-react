@@ -20,7 +20,9 @@ export const HomeCharactersSection = ({ characterData, characters, setCurrentCha
         />
       </section>
       <section className="w-full min-h-screen bg-black bg-opacity-80 flex flex-col justify-center p-16">
-        <h3 className="font-audio font-medium text-8xl text-gray-200 tracking-widest">{characterData.name}</h3>
+        <h3 className="font-audio font-medium text-8xl text-gray-200 tracking-widest" data-testid="character-name">
+          {characterData.name}
+        </h3>
         <div className="w-48 h-1 bg-gray-200 my-8" />
         <div className="flex flex-row items-center gap-1 mb-2">
           {Array.from(Array(characterData.rarity).keys()).map((item) => (
@@ -47,7 +49,8 @@ export const HomeCharactersSection = ({ characterData, characters, setCurrentCha
               key={item.id}
               onClick={() => setCurrentCharacter(Number(item.id) - 1)}
               aria-label={`Take a closer look in ${item.name}`}
-              className="outline-none border-none focus-visible:outline-4 focus-visible:outline-fuchsia-500">
+              className="outline-none border-none focus-visible:outline-4 focus-visible:outline-fuchsia-500"
+              data-testid="change-character-button">
               <img
                 src={item.avatar}
                 alt={`Avatar of ${item.name}`}

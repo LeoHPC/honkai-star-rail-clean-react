@@ -50,7 +50,7 @@ export const HomeCharactersSection = ({ characterData, characters, setCurrentCha
               onClick={() => setCurrentCharacter(Number(item.id) - 1)}
               aria-label={`Take a closer look in ${item.name}`}
               className="outline-none border-none focus-visible:outline-4 focus-visible:outline-fuchsia-500"
-              data-testid="change-character-button">
+              data-testid={`change-character-button-${item.id}`}>
               <img
                 src={item.avatar}
                 alt={`Avatar of ${item.name}`}

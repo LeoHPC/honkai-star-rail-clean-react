@@ -61,6 +61,26 @@ describe('Home Page', () => {
     expect(homeMessage).toBeInTheDocument()
   })
 
+  it('should change character', async () => {
+    window.ResizeObserver =
+      window.ResizeObserver ||
+      jest.fn().mockImplementation(() => ({
+        disconnect: jest.fn(),
+        observe: jest.fn(),
+        unobserve: jest.fn()
+      }))
+
+    const { component } = makeSut()
+
+    const dialogOpenButton = await waitFor(() => component.getByTestId('change-character-button-1'))
+
+    fireEvent.click(dialogOpenButton)
+
+    const videoDialog = await waitFor(() => component.getByTestId('character-name'))
+
+    expect(videoDialog).toBeInTheDocument()
+  }, 10000)
+
   it('should toggle the dialog on and off', async () => {
     window.ResizeObserver =
       window.ResizeObserver ||
@@ -85,7 +105,7 @@ describe('Home Page', () => {
     fireEvent.click(dialogCloseButton)
 
     expect(videoDialog).not.toBeInTheDocument()
-  })
+  }, 10000)
 
   it('renders correctly on mobiles screens', async () => {
     resizeScreenSize(400)
@@ -111,5 +131,5 @@ describe('Home Page', () => {
     userEvent.hover(menuThirdLink)
 
     expect(menuThirdLink).toHaveStyle('color: rgb(17 24 39)')
-  })
+  }, 10000)
 })

@@ -1,6 +1,6 @@
 export const MenuButton = (): JSX.Element => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="36px" height="36px">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="36px" height="36px" aria-hidden="true">
       <linearGradient
         id="EIPc0qTNCX0EujYwtxKaXa"
         x1="12.066"

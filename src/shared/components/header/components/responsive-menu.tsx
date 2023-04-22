@@ -11,7 +11,7 @@ export const ResponsiveMenu = (): JSX.Element => {
         <Menu.Button
           data-testid="responsive-menu-button"
           aria-label="menu"
-          className="inline-flex w-full justify-center bg-black bg-opacity-0 px-2 py-1 outline-none border-none focus-visible:outline-4 focus-visible:outline-fuchsia-500">
+          className="inline-flex w-full justify-center bg-black bg-opacity-0 px-2 py-1 outline-none border-none">
           <MenuButton />
         </Menu.Button>
       </div>

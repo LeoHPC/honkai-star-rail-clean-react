@@ -3,7 +3,7 @@ import { Props } from './types'
 
 export const SelectYourCharacter = ({ characters, characterData, setCurrentCharacter }: Props) => {
   return (
-    <div className="flex flex-row items-center gap-2 w-full">
+    <div className="flex flex-row items-center gap-2 overflow-auto scrollbar-hide">
       {characters.map((item) => (
         <button
           key={item.id}
@@ -19,7 +19,7 @@ export const SelectYourCharacter = ({ characters, characterData, setCurrentChara
             title={item.name}
             className={`${
               characterData === item ? 'grayscale-0' : 'grayscale'
-            } border-2 border-yellow-600 hover:grayscale-0`}
+            } border-2 border-yellow-600 hover:grayscale-0 min-w-[80px] min-h-[80px]`}
             draggable="false"
             aria-hidden="true"
           />

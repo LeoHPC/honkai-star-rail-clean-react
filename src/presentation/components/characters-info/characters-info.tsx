@@ -9,7 +9,7 @@ export const CharactersInfo = ({ characterData }: Props) => {
   return (
     <>
       <h3
-        className="font-audio font-medium text-6xl md:text-8xl text-gray-200 tracking-widest"
+        className="font-audio font-medium text-3xl sm:text-6xl md:text-8xl text-gray-200 tracking-widest"
         data-testid="character-name">
         {characterData.name}
       </h3>

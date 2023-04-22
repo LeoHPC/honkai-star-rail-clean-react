@@ -22,7 +22,7 @@ export const BannerMessage = () => {
 
   return (
     <>
-      <section className="bg-gray-950 w-screen p-8 flex flex-col items-center justify-center sm:gap-6 gap-2 bg-opacity-40">
+      <section className="md:bg-gray-950 w-screen p-8 flex flex-col items-center justify-center gap-6 md:bg-opacity-40">
         <button
           onClick={openModal}
           title="Watch our gameplay trailer on YouTube!"
@@ -32,7 +32,7 @@ export const BannerMessage = () => {
           <PlayButtonIcon />
         </button>
         <h1
-          className="lg:text-6xl md:text-4xl text-2xl text-center font-audio text-gray-200 font-medium"
+          className="bg-gray-900 md-bg-none bg-opacity-60 md:bg-opacity-0 w-screen px-4 py-2 md:p-0 lg:text-6xl md:text-4xl text-2xl text-center font-audio text-gray-200 font-medium"
           data-testid="home-message">
           May This Journey Lead Us Starward
         </h1>

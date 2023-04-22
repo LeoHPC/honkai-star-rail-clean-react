@@ -6,6 +6,7 @@ export default {
       backgroundImage: {
         'loading-background': "url('../img/loading-background.webp')",
         'home-background': "url('../img/home-background.webp')",
+        'home-mobile-background': "url('../img/home-mobile-background.webp')",
         'characters-background': "url('../img/characters-background.webp')"
       },
       fontFamily: {

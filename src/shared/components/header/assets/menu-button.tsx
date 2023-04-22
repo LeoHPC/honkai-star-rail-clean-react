@@ -8,8 +8,8 @@ export const MenuButton = (): JSX.Element => {
         y1=".066"
         y2="22.891"
         gradientUnits="userSpaceOnUse">
-        <stop offset=".237" stopColor="#f1ba22" />
-        <stop offset=".85" stopColor="#bd7b19" />
+        <stop offset=".237" stopColor="#8b0b0b" />
+        <stop offset=".85" stopColor="#460000" />
       </linearGradient>
       <path
         fill="url(#EIPc0qTNCX0EujYwtxKaXa)"
@@ -22,8 +22,8 @@ export const MenuButton = (): JSX.Element => {
         y1="12.066"
         y2="34.891"
         gradientUnits="userSpaceOnUse">
-        <stop offset=".237" stopColor="#f1ba22" />
-        <stop offset=".85" stopColor="#bd7b19" />
+        <stop offset=".237" stopColor="#8b0b0b" />
+        <stop offset=".85" stopColor="#460000" />
       </linearGradient>
       <path
         fill="url(#EIPc0qTNCX0EujYwtxKaXb)"
@@ -36,8 +36,8 @@ export const MenuButton = (): JSX.Element => {
         y1="24.066"
         y2="46.891"
         gradientUnits="userSpaceOnUse">
-        <stop offset=".237" stopColor="#f1ba22" />
-        <stop offset=".85" stopColor="#bd7b19" />
+        <stop offset=".237" stopColor="#8b0b0b" />
+        <stop offset=".85" stopColor="#460000" />
       </linearGradient>
       <path
         fill="url(#EIPc0qTNCX0EujYwtxKaXc)"

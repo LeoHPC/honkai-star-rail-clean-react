@@ -26,7 +26,6 @@
 ### Settings already made
 
 - [x] Alias
-- [x] Babel
 - [x] PWA
 - [x] Coverage Badges
 - [x] Pre-commit

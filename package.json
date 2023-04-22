@@ -29,7 +29,6 @@
     "tailwind-scrollbar-hide": "^1.1.7"
   },
   "devDependencies": {
-    "@babel/preset-env": "^7.21.4",
     "@commitlint/cli": "^17.5.1",
     "@commitlint/config-conventional": "^17.4.4",
     "@faker-js/faker": "^7.6.0",

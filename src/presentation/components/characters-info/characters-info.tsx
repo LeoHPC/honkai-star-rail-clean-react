@@ -13,7 +13,7 @@ export const CharactersInfo = ({ characterData }: Props) => {
         data-testid="character-name">
         {characterData.name}
       </h3>
-      <div className="w-48 h-1 bg-gray-200 my-8" />
+      <div className="w-48 h-1 bg-gray-200 my-4 md:my-8" />
       <div className="flex flex-row items-center gap-1 mb-2">
         {Array.from(Array(characterData.rarity).keys()).map((item) => (
           <span key={item}>

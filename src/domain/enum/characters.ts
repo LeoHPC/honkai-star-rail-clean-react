@@ -1,5 +1,6 @@
 export enum CharactersEnum {
   WELT,
   HIMEKO,
-  GEPARD
+  GEPARD,
+  BRONYA
 }

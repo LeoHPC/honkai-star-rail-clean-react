@@ -1,6 +1,6 @@
 // Components
-import { BannerMessage } from '@/presentation/components'
-import { Header, SocialMediaSection } from '@/shared/components'
+import { Header } from '@/shared/components'
+import { BannerMessage, SocialMediaSection } from '@/presentation/components'
 
 export const HomeFirstSection = () => {
   return (

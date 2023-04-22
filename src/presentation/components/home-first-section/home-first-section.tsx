@@ -1,5 +1,6 @@
-import { Header } from '@/shared/components'
+// Components
 import { BannerMessage } from '@/presentation/components'
+import { Header, SocialMediaSection } from '@/shared/components'
 
 export const HomeFirstSection = () => {
   return (
@@ -7,6 +8,7 @@ export const HomeFirstSection = () => {
       <div className="z-10">
         <Header />
         <BannerMessage />
+        <SocialMediaSection />
         <img
           src="./img/hsr-logo.webp"
           alt="Honkai Star Rail Game Logo"

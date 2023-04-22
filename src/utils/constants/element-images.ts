@@ -8,5 +8,9 @@ export const ELEMENT_IMAGES: { [key in ElementsEnum]: { image: string; alt: stri
   [ElementsEnum.Fire]: {
     image: '/img/fire-element.webp',
     alt: 'Fire Element Icon'
+  },
+  [ElementsEnum.Ice]: {
+    image: '/img/ice-element.webp',
+    alt: 'Ice Element Icon'
   }
 }

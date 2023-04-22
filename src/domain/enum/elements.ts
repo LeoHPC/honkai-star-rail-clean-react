@@ -1,4 +1,5 @@
 export enum ElementsEnum {
   Imaginary = 'Imaginary',
-  Fire = 'Fire'
+  Fire = 'Fire',
+  Ice = 'Ice'
 }

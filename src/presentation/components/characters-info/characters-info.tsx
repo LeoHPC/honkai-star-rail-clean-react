@@ -34,9 +34,6 @@ export const CharactersInfo = ({ characterData }: Props) => {
       <cite className="mt-4 text-base sm:text-xl text-gray-200 font-medium tracking-wide h-32 lg:h-full overflow-y-auto scrollbar-hide">
         - {characterData.description}
       </cite>
-      <h4 className="font-audio font-medium text-xl sm:text-3xl text-gray-200 tracking-widest mt-4 sm:mt-12">
-        Select Your Character
-      </h4>
     </>
   )
 }

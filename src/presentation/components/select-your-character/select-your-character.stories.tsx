@@ -9,36 +9,42 @@ export default {
   component: SelectYourCharacter,
   args: {
     characterData: {
-      name: 'Diluc',
-      description: 'Fire Swordmaster',
+      name: 'Himeko',
+      description:
+        'An adventurous scientist who encountered and repaired a stranded train as a child. She now ventures across the universe with her train currently named the Astral Express, operating as its navigator.',
       element: ElementsEnum.Fire,
       id: '3',
       rarity: 5,
-      va: 'Leonardo',
-      avatar: 'https://pbs.twimg.com/profile_images/1511138361896935424/B1AfSM3I_400x400.jpg',
-      image: 'https://pbs.twimg.com/profile_images/1511138361896935424/B1AfSM3I_400x400.jpg'
+      va: 'Cia Court',
+      avatar:
+        'https://serving.photos.photobox.com/190925631d5bc59964f67d62031b6d0d1a934441c1f30c05b838466d755583cc46c6e254.jpg',
+      image: 'https://gcdnb.pbrd.co/images/1b0hCZUUddc0.webp?o=1'
     },
     setCurrentCharacter: () => '',
     characters: [
       {
-        name: 'Diluc',
-        description: 'Fire Swordmaster',
+        name: 'Himeko',
+        description:
+          'An adventurous scientist who encountered and repaired a stranded train as a child. She now ventures across the universe with her train currently named the Astral Express, operating as its navigator.',
         element: ElementsEnum.Fire,
         id: '3',
         rarity: 5,
-        va: 'Leonardo',
-        avatar: 'https://pbs.twimg.com/profile_images/1511138361896935424/B1AfSM3I_400x400.jpg',
-        image: 'https://pbs.twimg.com/profile_images/1511138361896935424/B1AfSM3I_400x400.jpg'
+        va: 'Cia Court',
+        avatar:
+          'https://serving.photos.photobox.com/190925631d5bc59964f67d62031b6d0d1a934441c1f30c05b838466d755583cc46c6e254.jpg',
+        image: 'https://gcdnb.pbrd.co/images/1b0hCZUUddc0.webp?o=1'
       },
       {
-        name: 'Diluc',
-        description: 'Fire Swordmaster',
+        name: 'Himeko',
+        description:
+          'An adventurous scientist who encountered and repaired a stranded train as a child. She now ventures across the universe with her train currently named the Astral Express, operating as its navigator.',
         element: ElementsEnum.Fire,
         id: '3',
         rarity: 5,
-        va: 'Leonardo',
-        avatar: 'https://pbs.twimg.com/profile_images/1511138361896935424/B1AfSM3I_400x400.jpg',
-        image: 'https://pbs.twimg.com/profile_images/1511138361896935424/B1AfSM3I_400x400.jpg'
+        va: 'Cia Court',
+        avatar:
+          'https://serving.photos.photobox.com/190925631d5bc59964f67d62031b6d0d1a934441c1f30c05b838466d755583cc46c6e254.jpg',
+        image: 'https://gcdnb.pbrd.co/images/1b0hCZUUddc0.webp?o=1'
       }
     ]
   }

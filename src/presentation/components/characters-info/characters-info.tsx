@@ -31,7 +31,7 @@ export const CharactersInfo = ({ characterData }: Props) => {
         {characterData.element}
       </span>
       <span className="text-lg sm:text-2xl text-gray-200  tracking-wider font-semibold">VA: {characterData.va}</span>
-      <cite className="mt-4 text-base sm:text-xl text-gray-200 font-medium tracking-wide h-32 lg:h-full overflow-y-auto scrollbar-hide">
+      <cite className="mt-4 text-base sm:text-xl text-gray-200 font-medium tracking-wide h-32 lg:h-28 overflow-y-auto scrollbar-hide">
         - {characterData.description}
       </cite>
     </>

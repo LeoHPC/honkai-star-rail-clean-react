@@ -3,7 +3,7 @@ import { BannerMessage } from '@/presentation/components'
 
 export const HomeFirstSection = () => {
   return (
-    <div className="relative w-full h-screen flex  bg-home-background bg-cover  bg-no-repeat bg-gray-900 items-center justify-center overflow-hidden">
+    <div className="relative w-full h-[100svh] flex  bg-home-background bg-cover  bg-no-repeat bg-gray-900 items-center justify-center overflow-hidden">
       <div className="z-10">
         <Header />
         <BannerMessage />

@@ -2,5 +2,7 @@ export enum ElementsEnum {
   Imaginary = 'Imaginary',
   Fire = 'Fire',
   Ice = 'Ice',
-  Wind = 'Wind'
+  Wind = 'Wind',
+  Lightning = 'Lightning',
+  Quantum = 'Quantum'
 }

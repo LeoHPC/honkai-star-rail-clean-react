@@ -16,5 +16,13 @@ export const ELEMENT_IMAGES: { [key in ElementsEnum]: { image: string; alt: stri
   [ElementsEnum.Wind]: {
     image: '/img/wind-element.webp',
     alt: 'Wind Element Icon'
+  },
+  [ElementsEnum.Lightning]: {
+    image: '/img/lightning-element.webp',
+    alt: 'Lightning Element Icon'
+  },
+  [ElementsEnum.Quantum]: {
+    image: '/img/quantum-element.webp',
+    alt: 'Quantum Element Icon'
   }
 }

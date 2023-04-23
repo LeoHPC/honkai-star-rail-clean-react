@@ -58,13 +58,13 @@ All rules of clean architecture was respected and tested, as you see in the imag
 
 This project was very concerned with accessibility, taking care of issues such as: color contrast, screen readers, semantic html, gesture navigation, etc... And as you can see in the images below, everything is in accordance with the rules WCAG 2.1:
 
-Access Monitor:
+Access Monitor:<br />
 ![Access Monitor score](https://gcdnb.pbrd.co/images/YG0YjoqDdZvB.png?o=1 "Access Monitor score")
 
-Wave:
+Wave:<br />
 ![Wave score](https://gcdnb.pbrd.co/images/uRHYvElmrDUz.png?o=1 "Wave score")
 
-Google Lighthouse:
+Google Lighthouse:<br />
 ![Google Lighthouse](https://gcdnb.pbrd.co/images/wAuCiTO7wPtw.png?o=1 "Google Lighthouse")
 
 ### Design
@@ -73,7 +73,7 @@ Everything was made with TailwindCSS, Headless UI and documented with Storybook.
 
 ![Home First Section](https://gcdnb.pbrd.co/images/BwpoC3k7Vt3c.png?o=1 "Home First Section")
 
-![Home Characters Section](https://gcdnb.pbrd.co/images/gBY9JSA4fb52.png?o=1 "Home Characters Section")
+![Home Characters Section](https://gcdnb.pbrd.co/images/Ob9UvM1L4eXn.png?o=1 "Home Characters Section")
 
 ### Demo
 

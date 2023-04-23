@@ -6,10 +6,10 @@
 
 <p align="center">
   <br>
-  <img src="https://img.shields.io/github/languages/top/leohpc/honkai-star-rail-clean-react">
-  <img src="https://img.shields.io/github/issues/leohpc/honkai-star-rail-clean-react">
-  <img src="https://img.shields.io/github/forks/leohpc/honkai-star-rail-clean-react">
-  <img src="https://img.shields.io/github/stars/leohpc/honkai-star-rail-clean-react">
+  <img src="https://img.shields.io/github/languages/top/LeoHPC/honkai-star-rail-clean-react">
+  <img src="https://img.shields.io/github/issues/LeoHPC/honkai-star-rail-clean-react">
+  <img src="https://img.shields.io/github/forks/LeoHPC/honkai-star-rail-clean-react">
+  <img src="https://img.shields.io/github/stars/LeoHPC/honkai-star-rail-clean-react">
 </p>
 
 #### This project is about the launch of the new game from Mihoyo: Honkai Star Rail, and it was made to improve my skills in clean architecture, clean code, unitary tests, design pattern, storybook and accessibility.

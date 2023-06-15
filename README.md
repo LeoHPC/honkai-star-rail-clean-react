@@ -53,6 +53,7 @@ All rules of clean architecture was respected and tested, as you see in the imag
 - [x] Pre-commit
 - [x] Documenting Components w/ Storybook
 - [x] [Deploy Platform](https://honkai-star-rail-clean-react.vercel.app/)
+- [x] [Deploy Storybook](https://main--643c52c710255e45ba42fd35.chromatic.com/)
 
 ### Accessibility
 
